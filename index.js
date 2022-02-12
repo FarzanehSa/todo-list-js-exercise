@@ -4,12 +4,12 @@ function newTask(title, description) {
     description: description,
     complete: false,
 
-    // prints out the provided task's details
+    // prints out the details
     logTaskState: function() {
       console.log(`${this.title} has${this.complete ? " " : " not "}been completed`);
     },
 
-    // marks the provided task as completed
+    // marks the task as completed
     completeTask: function() {
       this.complete = true;
     },
@@ -17,10 +17,6 @@ function newTask(title, description) {
   };
   return task;
 }
-
-
-
-// DRIVER CODE BELOW
 
 const task1 = newTask("Clean Cat Litter", "Take all the 💩 out of the litter box");
 const task2 = newTask("Do Laundry", "😨");
